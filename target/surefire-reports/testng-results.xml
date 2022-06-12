@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-04T18:54:40 CST" name="Surefire suite" finished-at="2022-06-04T18:54:50 CST" duration-ms="10626">
+  <suite started-at="2022-06-12T10:08:31 CST" name="Practice Suite" finished-at="2022-06-12T10:08:37 CST" duration-ms="5212">
     <groups>
     </groups>
-    <test started-at="2022-06-04T18:54:40 CST" name="Surefire test" finished-at="2022-06-04T18:54:50 CST" duration-ms="10626">
-      <class name="core.testScripts.TC02">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:40 CST" name="initializeDriver" finished-at="2022-06-04T18:54:47 CST" duration-ms="7425" status="PASS">
+    <test started-at="2022-06-12T10:08:31 CST" name="Test 01" finished-at="2022-06-12T10:08:37 CST" duration-ms="5212">
+      <class name="core.testScripts.TC01">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:core.testScripts.TC01@47d90b9e]" started-at="2022-06-12T10:08:31 CST" name="initializeDriver" finished-at="2022-06-12T10:08:35 CST" duration-ms="3475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="visitFacebook()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:47 CST" name="visitFacebook" description="Visiting Facebook and printing page title" finished-at="2022-06-04T18:54:48 CST" duration-ms="1095" status="PASS">
+        <test-method signature="openURL()[pri:0, instance:core.testScripts.TC01@47d90b9e]" started-at="2022-06-12T10:08:35 CST" name="openURL" description="Opening an specific URL and closing the driver" finished-at="2022-06-12T10:08:36 CST" duration-ms="1097" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- visitFacebook -->
-        <test-method signature="visitGoogle01()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:48 CST" name="visitGoogle01" description="Visiting Google and printing URL" finished-at="2022-06-04T18:54:49 CST" duration-ms="1004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visitGoogle01 -->
-        <test-method signature="visitGoogle02()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:49 CST" name="visitGoogle02" description="Visiting Google and printing Page Source" finished-at="2022-06-04T18:54:50 CST" duration-ms="414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visitGoogle02 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:50 CST" name="quitDriver" finished-at="2022-06-04T18:54:50 CST" duration-ms="659" status="PASS">
+        </test-method> <!-- openURL -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:core.testScripts.TC01@47d90b9e]" started-at="2022-06-12T10:08:36 CST" name="quitDriver" finished-at="2022-06-12T10:08:37 CST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- core.testScripts.TC02 -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      </class> <!-- core.testScripts.TC01 -->
+    </test> <!-- Test 01 -->
+  </suite> <!-- Practice Suite -->
 </testng-results>
