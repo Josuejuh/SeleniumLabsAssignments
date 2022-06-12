@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-04T18:54:40 CST" name="Surefire suite" finished-at="2022-06-04T18:54:50 CST" duration-ms="10626">
+    <groups>
+    </groups>
+    <test started-at="2022-06-04T18:54:40 CST" name="Surefire test" finished-at="2022-06-04T18:54:50 CST" duration-ms="10626">
+      <class name="core.testScripts.TC02">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:40 CST" name="initializeDriver" finished-at="2022-06-04T18:54:47 CST" duration-ms="7425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="visitFacebook()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:47 CST" name="visitFacebook" description="Visiting Facebook and printing page title" finished-at="2022-06-04T18:54:48 CST" duration-ms="1095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitFacebook -->
+        <test-method signature="visitGoogle01()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:48 CST" name="visitGoogle01" description="Visiting Google and printing URL" finished-at="2022-06-04T18:54:49 CST" duration-ms="1004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitGoogle01 -->
+        <test-method signature="visitGoogle02()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:49 CST" name="visitGoogle02" description="Visiting Google and printing Page Source" finished-at="2022-06-04T18:54:50 CST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitGoogle02 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:core.testScripts.TC02@5af97850]" started-at="2022-06-04T18:54:50 CST" name="quitDriver" finished-at="2022-06-04T18:54:50 CST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- core.testScripts.TC02 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
