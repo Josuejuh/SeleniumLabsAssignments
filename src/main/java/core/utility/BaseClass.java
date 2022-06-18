@@ -5,8 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -14,7 +13,7 @@ public class BaseClass {
     public WebDriver driver = null;
 
     //BEFORE SUITE WILL BE A GOOD APPROACH TOO DEPENDING IN HOW IT IS SET UP THE TESTNG SUITE
-    @BeforeTest
+    @BeforeSuite
     public WebDriver initializeDriver() {
 
         String browser = System.getProperty("browser", "chrome");
@@ -35,9 +34,9 @@ public class BaseClass {
         return driver;
     }
 
-    @AfterTest
+    @AfterSuite
     public void quitDriver() {
-        driver.quit();
+        //driver.quit();
     }
 
 

@@ -3,7 +3,7 @@
 <suite name="Practice Suite">
     <test name="Test 01">
         <classes>
-            <class name="core.testScripts.TC01"/>
+            <class name="core.testScripts.TC07"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
