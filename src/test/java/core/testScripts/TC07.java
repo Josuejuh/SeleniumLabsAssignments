@@ -1,10 +1,12 @@
 package core.testScripts;
 
 import core.utility.BaseClass;
+import core.utility.listeners.ListenerCustom;
+import core.utility.listeners.RetryAnalizer;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-@Listeners(core.utility.ListenerCustom01.class)
+@Listeners(ListenerCustom.class)
 public class TC07 extends BaseClass {
 
     @Test
@@ -13,7 +15,7 @@ public class TC07 extends BaseClass {
         System.out.println(driver.getTitle());
     }
 
-    @Test (retryAnalyzer = core.utility.RetryAnalizer.class)
+    @Test (retryAnalyzer = RetryAnalizer.class)
     public void TestFailure(){
         driver.get("https://www.google.com.sv");
         Assert.assertEquals(driver.getTitle(),"Nothing");

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Practice Suite">
+    <listeners>
+        <listener class-name="core.utility.listeners.ListenerCustom"/>
+    </listeners>
     <test name="Test 01">
         <classes>
-            <class name="core.testScripts.TC07"/>
+            <class name="core.seleniumAssign.TS01"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
