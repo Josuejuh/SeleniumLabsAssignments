@@ -9,5 +9,6 @@ core\utility\logs\JSErrorLogs.class
 core\pages\orange\OrangeHomePage.class
 core\pages\orange\OrangeLoginPage.class
 core\utility\GetData.class
+core\pages\orange\OrangePimPage.class
 core\utility\HighLight.class
 core\utility\listeners\RetryAnalizer.class

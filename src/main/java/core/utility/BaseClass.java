@@ -2,6 +2,7 @@ package core.utility;
 
 import core.pages.orange.OrangeHomePage;
 import core.pages.orange.OrangeLoginPage;
+import core.pages.orange.OrangePimPage;
 import core.pages.others.FacebookHomePage;
 import core.pages.others.GoogleHomePage;
 import core.pages.others.SampleWebPage;
@@ -15,9 +16,12 @@ import org.testng.annotations.*;
 import java.time.Duration;
 
 public class BaseClass {
+
     public WebDriver driver = null;
     public OrangeHomePage ohp;
     public OrangeLoginPage olp;
+
+    public OrangePimPage opp;
     public FacebookHomePage fhp;
     public GoogleHomePage ghp;
     public SampleWebPage sp;
@@ -51,6 +55,7 @@ public class BaseClass {
     public void methodLevelSetup() {
         ohp = new OrangeHomePage(driver);
         olp = new OrangeLoginPage(driver);
+        opp = new OrangePimPage(driver);
         fhp = new FacebookHomePage(driver);
         ghp = new GoogleHomePage(driver);
         sp = new SampleWebPage(driver);
@@ -59,7 +64,7 @@ public class BaseClass {
 
     @AfterClass
     public void quitDriver() {
-        //driver.quit();
+        driver.quit();
     }
 
     public void minimizeWindow(){

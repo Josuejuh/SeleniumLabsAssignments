@@ -3,6 +3,7 @@ package core.seleniumAssign;
 
 import core.utility.BaseClass;
 import core.utility.listeners.ListenerCustom;
+import core.utility.listeners.RetryAnalizer;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -25,8 +26,8 @@ public class TS01 extends BaseClass {
     }
 
 
-   // @Test(description = "Click on Admin and check the Link Texts",priority = 2, retryAnalyzer = RetryAnalizer.class)
-    @Test(description = "Click on Admin and check the Link Texts",priority = 2)
+    @Test(description = "Click on Admin and check the Link Texts",priority = 2, retryAnalyzer = RetryAnalizer.class)
+    //@Test(description = "Click on Admin and check the Link Texts",priority = 2)
     public void AdminCheck() {
         ohp.adminMenu.click();
         Assert.assertEquals(ohp.sbmAdmin01.getText(), "User Management");

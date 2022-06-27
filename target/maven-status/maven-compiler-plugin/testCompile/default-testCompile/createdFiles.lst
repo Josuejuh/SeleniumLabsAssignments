@@ -1,6 +1,7 @@
 core\testScripts\TC02.class
 core\seleniumAssign\TS01.class
 core\testScripts\TC06.class
+core\seleniumAssign\TS02.class
 core\testScripts\TC04.class
 core\testScripts\TC07.class
 core\testScripts\TC01.class

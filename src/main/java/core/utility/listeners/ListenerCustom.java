@@ -1,34 +1,16 @@
 package core.utility.listeners;
 
-
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import core.utility.BaseClass;
-import core.utility.logs.Log;
 import com.aventstack.extentreports.Status;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.sql.DriverManager;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Objects;
-
-import core.utility.reports.ExtentManager;
 import core.utility.reports.ExtentTestManager;
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import static core.utility.reports.ExtentManager.OUTPUT_FOLDER_SCREENSHOTS;
 
 
 public class ListenerCustom extends BaseClass implements ITestListener {
@@ -62,6 +44,15 @@ public class ListenerCustom extends BaseClass implements ITestListener {
     public synchronized void onTestSuccess(ITestResult result) {
         ExtentTestManager.getTest().assignCategory(getSimpleClassName(result));
         addExtentLabelToTest(result);
+
+        Object testClass = result.getInstance();
+        WebDriver webDriver = ((BaseClass) testClass).getDriver();
+        String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BASE64);
+        ExtentTestManager.getTest().log(Status.PASS, "Test Success",
+                ExtentTestManager.getTest().addScreenCaptureFromBase64String(base64Screenshot).getModel().getMedia().get(0));
+
+        addExtentLabelToTest(result);
+
         ExtentTestManager.endTest();
     }
 
